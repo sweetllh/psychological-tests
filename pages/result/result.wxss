@@ -1,0 +1,22 @@
+.container{
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.name{
+  position: absolute;
+  left: 0;
+  top:  28rpx;
+  width: 260rpx;
+  text-align: right;
+  font-size: 60rpx;
+  color: #212121;
+  font-weight: 500;
+}
+.buttonWrap{
+  padding: 40rpx 0 100rpx;
+}
+.buttonWrap view{
+  margin: 0 auto 40rpx;
+}

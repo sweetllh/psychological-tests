@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="/images/home.png" mode='' style='width: 100%; height: calc(100% - 150rpx);'></image>
+  <view class='myButton mainColor start' bindtap='showWrap'>立即测试</view>
+  <view class='toastWrap' style='display: {{isShow ?  "block" : "none"}}'>
+    <view class='contWrap section'>
+      <view class='inputWrap'><input class='myButton' bindinput="setName" maxlength='16' value="{{inputValue}}"
+      placeholder="输入姓名" placeholder-style="color: #fff;" /></view>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}" wx:key="{{index}}" style="color: {{item.checked ? '#FD9128' : ''}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}" color="#FD9128" />{{item.value}}
+        </label>
+      </radio-group>
+      <view class='myButton mainColor sure' bindtap='bindViewTap'>确定</view>
+    </view>
+  </view>
+</view>

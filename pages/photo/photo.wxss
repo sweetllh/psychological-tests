@@ -1,0 +1,56 @@
+/* photo.wxss */
+.item{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative
+}
+.photo{
+  position: absolute;
+  top: 133rpx;
+  left: 153rpx;
+  width: 456rpx;
+  height: 574rpx;
+  transform:rotate(-3deg);
+}
+.sure{
+  margin: 60rpx auto 0;
+}
+.item2{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background:rgba(0,0,0,0.6);
+}
+.item2 .gifImg{
+  width: 318rpx;
+  height: 280rpx;
+}
+.itemCont{
+  width: 600rpx;
+  height: 600rpx;
+  background: #fff;
+  margin: 50% auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.itemCont .text{
+  color: #FD9128;
+  font-size: 36rpx;
+  margin: 60rpx 0 35rpx;
+}
+.shadow{
+  width: 260rpx;
+  height: 142rpx;
+  position: absolute;
+  top: 260rpx;
+}
+.result{
+  width: 500rpx;
+}

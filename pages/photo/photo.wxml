@@ -1,0 +1,21 @@
+<view class='container'>
+<!-- 拍照 -->
+  <view class="item">
+      <view bindtap="gotoPhoto" style='width: 100%;height: calc(100% - 300rpx);'>
+        <image src="/images/upload.png" style='width: 100%; height: 100%;'></image>
+        <image class='photo' src="{{photoUrl}}"></image>
+      </view>
+      <button class='myButton mainColor sure' bindtap='uploadPhoto' loading="{{isLoading}}">确定上传</button>
+  </view>
+  
+  <!-- 拍照成功后 -->
+  <view class="item2" wx:if="{{isUpload}}" >
+    <view class='itemCont'>
+      <image src='/images/success.gif' style='z-index: 99' class='gifImg'></image>
+      <image src='/images/shadow.png' class='shadow'></image>
+      <view class='text'>照片上传成功！</view>
+      <view class='myButton mainColor result' bindtap='toResult'>立即查看创业海报</view>
+    </view>
+      
+  </view>
+</view>

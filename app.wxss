@@ -1,0 +1,26 @@
+/**app.wxss**/
+page{
+  height: 100%;
+}
+.container {
+  height: 100%;
+  font-size: 36rpx;
+  font-family: PingFangSC-Regular;
+} 
+.myButton {
+  width: 600rpx;
+  line-height: 88rpx;
+  border-radius: 88rpx;
+  text-align: center;
+}
+.mainColor {
+  background-color: #FD9128;
+  color: #fff;
+}
+.myButton::after{
+  background-color: none;
+}
+button{
+  font-weight: normal;
+  font-size: 36rpx;
+}

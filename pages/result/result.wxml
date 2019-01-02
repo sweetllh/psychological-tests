@@ -1,0 +1,9 @@
+<view class='container'>
+  <image src='{{imgUrl}}' style='width: 100%;height:2020rpx;' bindtap='previewImg'></image>
+  <view class="buttonWrap"> 
+    <view>
+      <button open-type="share" class='myButton mainColor'> 分享给好友</button>
+    </view>
+    <view class='myButton mainColor' bindtap='toAnather'>领取属于你的专属礼品</view>
+  </view>
+</view>

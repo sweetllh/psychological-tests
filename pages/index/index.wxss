@@ -1,0 +1,44 @@
+/**index.wxss**/
+.container{
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.start{
+  margin: 22rpx auto;
+}
+.toastWrap{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(1, 1, 1, 0.6);
+  color: #fff;
+}
+.contWrap{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.inputWrap{
+  margin: 160rpx 0 60rpx;
+  width: 600rpx;
+}
+.inputWrap input{
+ border: 1px solid #fff;
+ height: 82rpx;
+ line-height: 82rpx;
+ color: #fff;
+}
+.radio-group{
+  width: 600rpx;
+  padding:  0 100rpx 120rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between
+}

@@ -1,0 +1,17 @@
+<!--item.wxml-->
+<view class="container">
+  <view class='cont'  style='height: calc(100% - 516rpx)'>
+    <view>
+      <view class='itemNum'>{{itemNum}}/9</view>
+      <view>{{itemNum}}、{{questionList[itemNum-1].question}}</view>
+    </view>
+    <view wx:if="{{itemNum < 10}}" class="itemWrap">
+      <block wx:for="{{questionList[itemNum-1].abc}}" wx:key="questionList[itemNum-1].num"> 
+        <view class='myButton item {{answer[itemNum-1] == item.id ? "activeItem" : "" }}' 
+          animation="{{index == 0 ? animationData1 : index == 1 ? animationData2 : animationData3}}"
+          bindtap='{{answer[itemNum-1] ? "" :"choosed"}}' data-id="{{item.id}}">{{item.id}}. {{item.a}}</view>
+      </block>  
+    </view>
+  </view>
+  <image src='/images/item{{itemNum}}.png' class='itemImg' style='width: 100%;height: 516rpx;'></image>
+</view>

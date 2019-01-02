@@ -1,0 +1,17 @@
+{
+  "pages":[ 
+    "pages/index/index",
+    "pages/item/item",
+    "pages/photo/photo",
+    "pages/result/result"
+  ],
+  "window":{
+    "backgroundTextStyle":"#363636",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱小票之创业时代",
+    "navigationBarTextStyle":"black"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx4fa4d574e2b2064e"
+  ]
+}
